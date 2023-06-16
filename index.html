@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bubble Sort Visualizer</title>
+</head>
+<body>
+    <div id="wrapContent">
+
+
+        <div id="headContent">
+          <div id="header">
+            <h1>Bubble Sort Visualizer</h1>
+          </div>
+            <div id="inputWrapper">
+                <div id="input">
+                    <div>
+                        <label for="arraySize">Array-Size (5-50):</label>
+                        <input id="arraySize" type="number" name="arraySize" value="20" min="5" max="50" step="1">
+                    </div>
+
+                    <div>
+                        <label for="interval">Sorting-Speed (10 - 500ms per step):</label>
+                        <input id="interval" type="range" name="interval" value="200" min="10" max="500" step="10">
+                    </div>
+                </div>
+
+                <div id="buttonDiv">
+                    <button onclick="bubbleSort()"  id="bubble">Sort!</button>
+                    <!-- This section is reserved for the upcoming features!
+                            <button>Merge Sort</button>
+                            <button>Quick Sort</button>
+                    -->
+                </div>
+            </div>
+
+
+  
+        </div>
+  
+        <div id="visualizer">
+          <div id="columnWrapper">
+          </div>
+        </div>
+  
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
